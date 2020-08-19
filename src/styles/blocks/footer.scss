@@ -1,0 +1,26 @@
+.footer {
+  background: #0D0D0D;
+
+
+  &__inner {
+    padding: 14px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 155.69%;
+    color: #949494;
+  }
+
+  &__link {
+    @include transition;
+    
+    &:hover {
+      opacity: .8;
+    }
+  }
+}

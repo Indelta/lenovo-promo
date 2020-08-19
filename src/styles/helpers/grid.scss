@@ -1,0 +1,41 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+*, :after, :before, html, legend {
+  box-sizing: border-box;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+
+body {
+	font-family: $roboto;
+	font-size: $fontsize;
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	color: $textcolor;
+}
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include no-desktop {
+    padding: 0 20px;
+  }
+
+  @include tablet-and-mobile {
+    max-width: 720px;    
+  }
+
+  @include mobile {
+    max-width: 540px;
+  }
+}

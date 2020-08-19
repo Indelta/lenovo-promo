@@ -1,0 +1,24 @@
+@import "~normalize.css";
+@import "~reset-css";
+@import "~swiper/css/swiper.min.css";
+@import "~aos/dist/aos.css";
+
+@import './helpers/variables';
+@import './helpers/mixins';
+@import './helpers/fonts';
+@import './helpers/grid';
+@import './helpers/typography';
+@import './helpers/button';
+@import './helpers/form';
+
+
+@import './blocks/header';
+@import './blocks/main';
+// @import './blocks/contacts';
+// @import './blocks/gallery';
+// @import './blocks/about-us';
+// @import './blocks/services';
+// @import './blocks/mobile-menu';
+// @import './blocks/experience';
+@import './blocks/footer';
+// @import './blocks/modal';
